@@ -1,7 +1,7 @@
 //
 // Created by MacBook on 23/10/2023.
 //
-
+#include <string>
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -11,11 +11,13 @@
 #include <cmath>
 #include <queue>
 #define MAX 100
+#ifndef SINHVIEN_H
+#define SINHVIEN_H
 #include <string>
 using namespace std;
-class SinhVien{
+class SinhVien {
 private:
-    int id;
+    char id[30];
     string hoTen;
     string gioiTinh;
     double diemToan;
@@ -26,8 +28,8 @@ private:
 
 public:
     SinhVien() {
-        // Initialize member variables with default values or leave them uninitialized.
-        id = 0;
+        // Initialize member variables with default values
+        strcpy(id, "0");
         hoTen = "";
         gioiTinh = "";
         diemToan = 0;
@@ -36,8 +38,9 @@ public:
         diemTrungBinh = 0;
         hocLuc = "";
     }
-    SinhVien(int id, string hoTen, string gioiTinh, double diemToan, double diemLy, double diemHoa, double diemTrungBinh, string hocLuc){
-        this->id = id;
+
+    SinhVien(const char id[30], string hoTen, string gioiTinh, double diemToan, double diemLy, double diemHoa, double diemTrungBinh, string hocLuc) {
+        strcpy(this->id, id);
         this->hoTen = hoTen;
         this->gioiTinh = gioiTinh;
         this->diemToan = diemToan;
@@ -47,67 +50,69 @@ public:
         this->hocLuc = hocLuc;
     }
 
-    const int &getId() const {
+    const char* getId() const {
         return id;
     }
 
-    void setId(const int &id) {
-        SinhVien::id = id;
+    void setId(const char id[30]) {
+        strcpy(this->id, id);
     }
 
-    const string &getHoTen() const {
+    const string& getHoTen() const {
         return hoTen;
     }
 
-    void setHoTen(const string &hoTen) {
-        SinhVien::hoTen = hoTen;
+    void setHoTen(const string& hoTen) {
+        this->hoTen = hoTen;
     }
 
-    const string &getGioiTinh() const {
+    const string& getGioiTinh() const {
         return gioiTinh;
     }
 
-    void setGioiTinh(const string &gioiTinh) {
-        SinhVien::gioiTinh = gioiTinh;
+    void setGioiTinh(const string& gioiTinh) {
+        this->gioiTinh = gioiTinh;
     }
 
-    int getDiemToan() const {
+    double getDiemToan() const {
         return diemToan;
     }
 
-    void setDiemToan(int diemToan) {
-        SinhVien::diemToan = diemToan;
+    void setDiemToan(double diemToan) {
+        this->diemToan = diemToan;
     }
 
-    int getDiemLy() const {
+    double getDiemLy() const {
         return diemLy;
     }
 
-    void setDiemLy(int diemLy) {
-        SinhVien::diemLy = diemLy;
+    void setDiemLy(double diemLy) {
+        this->diemLy = diemLy;
     }
 
-    int getDiemHoa() const {
+    double getDiemHoa() const {
         return diemHoa;
     }
 
-    void setDiemHoa(int diemHoa) {
-        SinhVien::diemHoa = diemHoa;
+    void setDiemHoa(double diemHoa) {
+        this->diemHoa = diemHoa;
     }
 
-    int getDiemTrungBinh() const {
+    double getDiemTrungBinh() const {
         return diemTrungBinh;
     }
 
-    void setDiemTrungBinh(int diemTrungBinh) {
-        SinhVien::diemTrungBinh = diemTrungBinh;
+    void setDiemTrungBinh(double diemTrungBinh) {
+        this->diemTrungBinh = diemTrungBinh;
     }
 
-    const string &getHocLuc() const {
+    const string& getHocLuc() const {
         return hocLuc;
     }
 
-    void setHocLuc(const string &hocLuc) {
-        SinhVien::hocLuc = hocLuc;
+    void setHocLuc(const string& hocLuc) {
+        this->hocLuc = hocLuc;
     }
 };
+
+#endif // SINHVIEN_H
