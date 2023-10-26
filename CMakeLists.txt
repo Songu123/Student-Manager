@@ -8,4 +8,6 @@ add_executable(Student_Manager main.cpp
         SinhVien.h
         Functions.cpp
         Functions.h
+        File.cpp
+        File.h
 )
