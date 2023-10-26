@@ -67,6 +67,12 @@ build CMakeFiles/Student_Manager.dir/Functions.cpp.o: CXX_COMPILER__Student_Mana
   OBJECT_DIR = CMakeFiles/Student_Manager.dir
   OBJECT_FILE_DIR = CMakeFiles/Student_Manager.dir
 
+build CMakeFiles/Student_Manager.dir/File.cpp.o: CXX_COMPILER__Student_Manager_unscanned_Debug /Users/macbook/Documents/1.C$:C++/Lập$ trình$ C++/C++$ OOP/Student$ Manager/File.cpp || cmake_object_order_depends_target_Student_Manager
+  DEP_FILE = CMakeFiles/Student_Manager.dir/File.cpp.o.d
+  FLAGS = -g -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -fcolor-diagnostics
+  OBJECT_DIR = CMakeFiles/Student_Manager.dir
+  OBJECT_FILE_DIR = CMakeFiles/Student_Manager.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Student_Manager
@@ -75,7 +81,7 @@ build CMakeFiles/Student_Manager.dir/Functions.cpp.o: CXX_COMPILER__Student_Mana
 #############################################
 # Link the executable Student_Manager
 
-build Student_Manager: CXX_EXECUTABLE_LINKER__Student_Manager_Debug CMakeFiles/Student_Manager.dir/main.cpp.o CMakeFiles/Student_Manager.dir/SinhVien.cpp.o CMakeFiles/Student_Manager.dir/Functions.cpp.o
+build Student_Manager: CXX_EXECUTABLE_LINKER__Student_Manager_Debug CMakeFiles/Student_Manager.dir/main.cpp.o CMakeFiles/Student_Manager.dir/SinhVien.cpp.o CMakeFiles/Student_Manager.dir/Functions.cpp.o CMakeFiles/Student_Manager.dir/File.cpp.o
   FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6
   OBJECT_DIR = CMakeFiles/Student_Manager.dir
   POST_BUILD = :

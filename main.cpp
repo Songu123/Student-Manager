@@ -3,15 +3,18 @@
 #include "SinhVien.cpp"
 #include <string>
 #include "Functions.cpp"
+#include "File.cpp"
 using namespace std;
 
 int main() {
 //    Khai báo lớp Functions
     Functions functions = *new Functions();
+//    Khai báo lớp File
+    File file = *new File();
 //    Khai báo địa chỉ file
     const std::string filePath = "/Users/macbook/Documents/1.C:C++/Lập trình C++/C++ OOP/Student Manager/FileData.txt";
 //    Lưu danh sách vào file và đọc
-    std::vector<SinhVien> sv = functions.readObjectsFromFile(filePath);
+    std::vector<SinhVien> sv = file.readObjectsFromFile(filePath);
     bool display = true;
     while (display) {
         cout << "\nChương trình Quản Lý Sinh Viên!!!!";
@@ -34,7 +37,7 @@ int main() {
                 cout << "----------------------------------" << endl;
                 cout << "Thêm Sinh Viên";
                 functions.nhapThongTinSV(sv);
-                functions.writeObjectsToFile(sv,filePath);
+                file.writeObjectsToFile(sv,filePath);
                 break;
             case 2:
                 cout << "\n======Danh sách Sinh Viên=====" << endl;
@@ -45,7 +48,7 @@ int main() {
                 cout << "\nNhập id để xoá: ";
                 cin >> id;
                 functions.xoaSinhVienTheoID(sv, id);
-                functions.writeObjectsToFile(sv,filePath);
+                file.writeObjectsToFile(sv,filePath);
                 break;
             case 4:
                 cout << "Tìm kiếm Sinh Viên theo tên";
@@ -58,18 +61,18 @@ int main() {
                 cout << "Sắp xếp sinh viên theo điểm";
                 functions.sapXepSVTheoDiem(sv);
                 cout << "\nĐã sắp xếp xong, mời bạn nhấn số 2 để kiểm tra!" << endl;
-                functions.writeObjectsToFile(sv,filePath);
+                file.writeObjectsToFile(sv,filePath);
                 break;
             case 6:
                 cout << "Sắp xếp sinh viên theo tên";
                 functions.sapXepSVTheoTen(sv);
                 cout << "\nĐã sắp xếp xong, mời bạn nhấn số 2 để kiểm tra!" << endl;
-                functions.writeObjectsToFile(sv,filePath);
+                file.writeObjectsToFile(sv,filePath);
                 break;
             case 7:
                 cout << "Làm rỗng danh sách sinh viên";
                 functions.xoaCacSinhVien(sv);
-                functions.writeObjectsToFile(sv,filePath);
+                file.writeObjectsToFile(sv,filePath);
                 break;
             case 0:
                 cout << "Đã thoát chương trình!!!";

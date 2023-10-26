@@ -1,4 +1,4 @@
 /private/var/folders/hg/qc0f4qyj5ss3f8pm14qm1lyh0000gn/T/AppTranslocation/CAC26D17-1AA4-4942-9346-2545BA8EF61A/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/private/var/folders/hg/qc0f4qyj5ss3f8pm14qm1lyh0000gn/T/AppTranslocation/CAC26D17-1AA4-4942-9346-2545BA8EF61A/d/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S "/Users/macbook/Documents/1.C:C++/Lập trình C++/C++ OOP/Student Manager" -B "/Users/macbook/Documents/1.C:C++/Lập trình C++/C++ OOP/Student Manager/cmake-build-debug"
--- Configuring done (0.1s)
+-- Configuring done (0.2s)
 -- Generating done (0.0s)
 -- Build files have been written to: /Users/macbook/Documents/1.C:C++/Lập trình C++/C++ OOP/Student Manager/cmake-build-debug

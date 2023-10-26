@@ -1,9 +1,11 @@
 # ninja log v5
-2	328	1698329066045355534	build.ninja	9319d0000de4d356
-6	2187	1698227052229237288	CMakeFiles/Student_Manager.dir/SinhVien.cpp.o	7f850bb2b22d434a
-3	3178	1698229951912671308	CMakeFiles/Student_Manager.dir/main.cpp.o	5771dc23e6f6ce92
-3179	3320	1698229952062690642	Student_Manager	f538070b648f5b0a
+2	328	1698332980463510050	build.ninja	9319d0000de4d356
 10	2302	1698330629827201499	CMakeFiles/Student_Manager.dir/SinhVien.cpp.o	7f850bb2b22d434a
-11	2613	1698330630148209610	CMakeFiles/Student_Manager.dir/Functions.cpp.o	81058e4460b0e633
 5	2968	1698330630504100678	CMakeFiles/Student_Manager.dir/main.cpp.o	5771dc23e6f6ce92
 2968	3177	1698330630716771709	Student_Manager	cc8fc37e76d4ce72
+11	2613	1698330630148209610	CMakeFiles/Student_Manager.dir/Functions.cpp.o	81058e4460b0e633
+13	2639	1698334112170635886	CMakeFiles/Student_Manager.dir/SinhVien.cpp.o	7f850bb2b22d434a
+16	2732	1698334112270610626	CMakeFiles/Student_Manager.dir/Functions.cpp.o	81058e4460b0e633
+9	3216	1698334112758104075	CMakeFiles/Student_Manager.dir/main.cpp.o	5771dc23e6f6ce92
+2641	3852	1698334113394092079	CMakeFiles/Student_Manager.dir/File.cpp.o	d03a60681a022d02
+3853	4015	1698334113563896758	Student_Manager	4a491737a037a537
